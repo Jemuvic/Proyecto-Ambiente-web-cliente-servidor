@@ -14,8 +14,6 @@
 <body style="background-color: rgb(35, 137, 171);">
 <header th:fragment="header" class="header">
 
-
-
             <nav id="main-header" class="navbar navbar-expand-sm py-2  text-white" style="background-color: rgba(105, 220, 255);">
                 <div class="container">
                 <figure class="imagenTitulo"><img src="../Imagenes/icono.png" alt="" width="70" /></figure>
@@ -36,12 +34,13 @@
                                 <a class="nav-menu-link nav-link text-dark">Contactenos</a>
                             </li>   
                             <li class="nav-item px-2">
-                                <a class="nav-menu-link nav-link text-dark">Iniciar sesión</a>
+                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php">Iniciar sesión</a>
                             </li>                                   
                         </ul>                        
                     </div>                    
                  </div>  
-            </nav>           
+            </nav>        
+               
  </header> 
             <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgb(173, 169, 165);">
