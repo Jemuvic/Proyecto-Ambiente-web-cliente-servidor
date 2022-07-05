@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<title>Daily 8-bits</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -11,9 +10,8 @@
   <link href="../css/simple-sidebar.css" rel="stylesheet">
 </head>
 
-<footer th:fragment="footer" class="bg-light text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgb(173, 169, 165);">
         © 2022 Derechos reservados:
-        <a class="text-dark">Empresa empresa</a>
+        <a class="text-dark">Empresa@empresa.com</a>
         </div>
  </footer>

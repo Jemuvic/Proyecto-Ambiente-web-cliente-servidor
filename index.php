@@ -1,3 +1,3 @@
 <?php
-    Header("Location: View/plantillaProyecto.php");
+    Header("Location: View/Inicio.php");
 ?>
