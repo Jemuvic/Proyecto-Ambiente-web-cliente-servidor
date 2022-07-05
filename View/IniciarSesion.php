@@ -1,3 +1,4 @@
+<?php include('header.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,8 +29,8 @@
             <a class="link">No tiene cuenta? Cree una aquí</a>
         </section>
 
-        <footer th:replace="layout/plantillaProyecto :: footer">
+    <?php include('footer.php'); ?>
     </body>
-
+    
 
 </html>

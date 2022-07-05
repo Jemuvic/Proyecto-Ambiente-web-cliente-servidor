@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +10,6 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/simple-sidebar.css" rel="stylesheet">
 </head>
-
-<body style="background-color: rgb(35, 137, 171);">
 <header th:fragment="header" class="header">
 
             <nav id="main-header" class="navbar navbar-expand-sm py-2  text-white" style="background-color: rgba(105, 220, 255);">
@@ -43,12 +40,3 @@
             </nav>        
                
  </header> 
-            <footer th:fragment="footer" class="bg-light text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgb(173, 169, 165);">
-        © 2022 Derechos reservados:
-        <a class="text-dark">Empresa empresa</a>
-        </div>
- </footer>
- </body>
-
-</html>
