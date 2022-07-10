@@ -32,7 +32,7 @@
                                 <a class="nav-menu-link nav-link text-dark" href="Contactenos.php">Contactenos</a>
                             </li>   
                             <li class="nav-item px-2">
-                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php"> Iniciar.sesión</a>
+                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php"> IniciarSesión</a>
                             </li>                                   
                         </ul>                        
                     </div>                    
