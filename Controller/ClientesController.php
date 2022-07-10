@@ -14,7 +14,6 @@ function ConsultarClientesController()
         echo "<td>" . $item["correo"] . "</td>";
         echo "<td>" . $item["password"] . "</td>";
         echo "<td>" . $item["estado"] . "</td>";
-        echo "<td>" . $item["comentario"] . "</td>";
         echo "<td>" . $item["tipo"] . "</td>";
         /*echo '<td><input type="button" class="btn btn-primary" value="ToBeDefined" onclick="ToBeDefined(this);"></td>';*/
         echo "</tr>";

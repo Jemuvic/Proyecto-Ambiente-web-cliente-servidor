@@ -30,7 +30,6 @@ include '../Controller/ClientesController.php';
                 <th>Correo</th>
                 <th>Password</th>
                 <th>Estado</th>
-                <th>Comentarios</th>
                 <th>Tipo</th>
             </thead>
 
