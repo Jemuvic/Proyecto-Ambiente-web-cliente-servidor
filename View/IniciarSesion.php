@@ -1,4 +1,6 @@
 <?php include('header.php'); ?>
+<?php include '../Controller/LoginController.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,14 +16,17 @@
 
     <body class="body">
         <section class="formulario">
-            <form  method ="POST" enctype="multipart/form-data">
+
+
+            
+           <form  method ="POST"> 
               <h2 class="tituloForm">Iniciar Sesión</h2>
-              <label for="correo">Correo:</label>
-              <input type="email" name="correo" required minlength="6"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@ejemplo.com"/>
+              <label for="cedula">Cedula:</label>
+              <input type="cedula" name="txtCedula"/> 
               <br>
               <label for="password">Contraseña: </label>
-              <input type="password" name="password" required minlength="4" maxlength="20" placeholder="Escriba aqui su contraseña"/>
-              <button type="submit" name="guardar" value="Guardar registro">Iniciar Sesión</button>
+              <input type="password" name="txtPassword" required minlength="4" maxlength="20" placeholder="Escriba aqui su contraseña"/>
+              <input type="submit" name="btnLogin" value="Login">Iniciar Sesión</button>
             </form>
             <br>
             <a class="link" href="CrearUsuario.php">No tiene cuenta? Cree una aquí</a>

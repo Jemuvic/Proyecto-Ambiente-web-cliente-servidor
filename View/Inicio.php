@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
      <head>
         <title>Daily 8-bits</title>
         <meta charset="utf-8">
@@ -12,11 +15,24 @@
   <link href="../css/simple-sidebar.css" rel="stylesheet">
      </head>
 
+
+
+
+
+     
+
+
     <body class="body">
+
+
         <section class="contenido">
             <br>
             <br>
+            
+
+
             <h3 class="titular">Noticias</h3>
+
             <article class="noticia"  style="border-top: 3px;border-top-style: solid; border-top-color:#69DCFF" > 
                 <p class="resumen">Suspendisse taciti augue euismod sodales lobortis aenean sed, duis proin est cursus tortor sapien cubiliad nisi lobortis consequat, platea conubia viverra tempus augue pulvinar sem ultricies.</p>
                 <figure class="figura">

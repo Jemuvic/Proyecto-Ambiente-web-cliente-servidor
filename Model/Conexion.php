@@ -2,10 +2,10 @@
 
     function AbrirBD()
     {
-        $server = "127.0.0.1:3307";
+        $server = "localhost";
         $user = "root";
-        $password = "";
-        $database = "daily8";
+        $password = "Missi1430.";
+        $database = "practica_vn";
         return mysqli_connect($server, $user, $password, $database);
     }
     function CerrarBD($instancia)
