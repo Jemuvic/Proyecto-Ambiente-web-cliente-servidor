@@ -1,6 +1,6 @@
 <?php
 
-include '../Model/ClientesModel.php';
+include_once '../Model/ClientesModel.php';
         
 function ConsultarClientesController()
 { 
@@ -8,14 +8,12 @@ function ConsultarClientesController()
     while ($item = mysqli_fetch_array($ListaClientes)) 
     {
         echo "<tr>";
-        echo "<td>" . $item["idcliente"] . "</td>";
-        echo "<td>" . $item["nombre"] . "</td>";
-        echo "<td>" . $item["apellidos"] . "</td>";
-        echo "<td>" . $item["correo"] . "</td>";
-        echo "<td>" . $item["password"] . "</td>";
-        echo "<td>" . $item["estado"] . "</td>";
-        echo "<td>" . $item["tipo"] . "</td>";
-        /*echo '<td><input type="button" class="btn btn-primary" value="ToBeDefined" onclick="ToBeDefined(this);"></td>';*/
+        echo "<td>" . $item["Nombre"] . "</td>";
+        echo "<td>" . $item["Correo"] . "</td>";
+        echo "<td>" . $item["NombreRol"] . "</td>";
+        echo "<td>" . $item["IdRol"] . "</td>";
+        echo "<td>" . $item["Password"] . "</td>";
+        echo '<td></td>';
         echo "</tr>";
     }
 }

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-        <title>Iniciar partida</title>
+        <title>Nueva partida</title>
         <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -22,7 +22,7 @@
             <input type="text" name="nombre" required minlength="4" maxlength="10" placeholder="Escriba aqui el nombre"/>
               <br>
               <label for="apellidos">Apellido:</label>
-              <input type="text" name="apellidos" required minlength="4" maxlength="20" placeholder="Escriba aqui el apellido completo"/>
+              <input type="text" name="apellidos" required minlength="4" maxlength="20" placeholder="Escriba aquí el apellido completo"/>
               <br>
               <label for="correo">Correo:</label>
               <input type="email" name="correo" required minlength="6" maxlength="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@ejemplo.com"/>

@@ -6,10 +6,10 @@ if(isset($_POST['btnLogin']))
 
 {
 
-$cedula =  $_POST["txtCedula"];   
+$correo =  $_POST["txtCorreo"];   
 $password = $_POST["txtPassword"];
 
-$usuario = Consulta_Usuario_Model($cedula, $password);
+$usuario = Consulta_Usuario_Model($correo, $password);
 
 
 
@@ -26,7 +26,7 @@ session_start();
    $_SESSION["NombreUsuario"] = $item["Nombre"];
    $_SESSION["RolUsuario"] = $item["IdRol"];
 
-   //echo '<script>alert("Password correcto")</script>';
+   echo '<script>alert("Password correcto")</script>';
     Header("Location: ../View/Inicio.php");
     
     

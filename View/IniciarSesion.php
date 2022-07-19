@@ -16,17 +16,14 @@
 
     <body class="body">
         <section class="formulario">
-
-
-            
            <form  method ="POST"> 
               <h2 class="tituloForm">Iniciar Sesión</h2>
-              <label for="cedula">Cedula:</label>
-              <input type="cedula" name="txtCedula"/> 
+              <label for="correo">Correo:</label>
+              <input type="correo" name="txtCorreo"  placeholder="ejemplo@ejemplo.com"/>
               <br>
               <label for="password">Contraseña: </label>
               <input type="password" name="txtPassword" required minlength="4" maxlength="20" placeholder="Escriba aqui su contraseña"/>
-              <input type="submit" name="btnLogin" value="Login">Iniciar Sesión</button>
+              <button type="submit" name="btnLogin" value="Iniciar Sesión">Iniciar Sesión</button>
             </form>
             <br>
             <a class="link" href="CrearUsuario.php">No tiene cuenta? Cree una aquí</a>
@@ -36,3 +33,4 @@
     
 
 </html>
+

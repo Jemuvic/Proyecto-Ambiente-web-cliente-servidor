@@ -2,10 +2,10 @@
 
 include 'Conexion.php';
         
-function Consulta_Usuario_Model($cedula, $password)
+function Consulta_Usuario_Model($correo, $password)
 { 
     $instancia = AbrirBD();
-    $usuario = $instancia -> query("CALL Consulta_Usuario('$cedula', '$password')");
+    $usuario = $instancia -> query("CALL Consulta_Usuario('$correo', '$password')");
     CerrarBD($instancia);  
 
     return $usuario;

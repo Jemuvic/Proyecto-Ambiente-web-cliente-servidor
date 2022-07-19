@@ -8,19 +8,17 @@
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/simple-sidebar.css" rel="stylesheet">
         </head>
+        
     <body class="body"> 
         <section class="DCLIENTE">
-            <h2 class="titular">Agregar comentario</h2>
+            <h2 class="titular">Añada su comentario</h2>
             <br>
             <article class="descripcionformulario">      
-                <br>
-                <br>
-                   <form>
-                    <textarea type="text" name="comentario"></textarea>
-                    <button class="colorPrimario" type="submit" name="guardar"> Guardar comentario </button>
-                </form>  
+                   <textarea type="text" placeholder="Escriba aquí"></textarea>
+                    <button class="colorPrimario" type="submit" name="guardar"> Guardar comentario </button> 
             </article>
         </section>
+        <?php include('footer.php'); ?> 
     </body>
-    <?php include('footer.php'); ?> 
 </html>
+

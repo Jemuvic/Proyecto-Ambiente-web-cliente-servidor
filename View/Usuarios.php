@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <?php  
-include '../Controller/ClientesController.php';
+include_once '../Controller/ClientesController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,14 +23,12 @@ include '../Controller/ClientesController.php';
                 <br>
         <div class="div-users">
             <table class="tbl-users">
-                <thead id="TablaClientes" class="table table-hover" class="tbl-header">
-                <th>ID Cliente</th>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Correo</th>
-                <th>Password</th>
-                <th>Estado</th>
-                <th>Tipo</th>
+                <thead id="TablaClientes"  class="tbl-header">
+                <th>NOMBRE</th>
+                <th>CORREO</th>
+                <th>ROL</th>
+                <th>IDROL</th>
+                <th>CONTRASEÑA</th>
             </thead>
 
           <tbody>

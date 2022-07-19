@@ -199,13 +199,12 @@ input[type=button] {
 }
 .formulario{
   margin-top: 40px;
-  width:440px;
-  height:540px;
+  width:640px;
   background:#4CCDF5;
-  border-radius:9px;
-  box-shadow:0 0 50px -20px #000;
-  margin:calc(44.2vh - 230px) auto;
-  padding:20px 40px;
+  border-radius:10px;
+  box-shadow:0 0 70px -40px #000;
+  margin:calc(40.2vh - 200px) auto;
+  padding:40px 60px;
   max-width:calc(200vw - 50px);
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
@@ -287,15 +286,14 @@ textArea{
 }
 .DCLIENTE{
   width:640px;
-  height:740px;
   background:#4CCDF5;
   border-radius:10px;
   box-shadow:0 0 70px -40px #000;
-  margin:calc(30.2vh - 200px) auto;
+  margin:calc(44.2vh - 150px) auto;
   padding:40px 60px;
   max-width:calc(200vw - 50px);
   box-sizing:border-box;
-  font-family: Arial;
+  font-family:'Montserrat',sans-serif;
   position:relative;
 
 }
@@ -334,26 +332,27 @@ textArea{
   width:70%;
   height:200px;
   border-style: solid;
-  border-color: #69DCFF;
+  border-color: #2389A8;
   border-left: none;
   border-right: none;
-  border-top: none;
+  border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   max-width:calc(200vw - 50px);
   font-family:'Montserrat',sans-serif;
   position:relative;
   display: flex;
+  background:#4CCDF5;
 }
 .figura{
   text-align: center;
-  width:40%;
+  width:35%;
   background:#69DCFF;
-  border-radius:9px;
+  border-radius:15px;
   box-shadow:0 0 50px -20px #000;
   padding:0;
   max-width:calc(200vw - 50px);
@@ -444,7 +443,7 @@ textArea{
 
 .tituloComentario{
   font-size: 30px;
-  color: #fff;
+  color: #000;
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
@@ -508,7 +507,7 @@ textArea{
   text-align: left;
   font-weight: 500;
   font-size: 12px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 20px
@@ -557,5 +556,22 @@ textArea{
   height:300px;
   overflow-x: auto;
   margin-top: 20px;
+}
+
+.linkeo {
+  float:center;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s;
+  border-radius: 40px;
+}
+.linkeo:hover {
+  background:#78788c;
+  color:#fff;
 }
 

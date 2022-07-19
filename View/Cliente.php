@@ -13,9 +13,7 @@
         <h2 class="titular">Datos del cliente</h2>
         <br>
         <article class="descripcionformulario">
-        <a class="newnew">Regresar</a>
-        <br>
-            <br>
+
         <form>
             <input type="hidden" name="idcliente"/>
             <input type="hidden" name="estado"/>
@@ -37,8 +35,10 @@
                 </select>
             <br>
                 
-            <button type="submit" name="guardar" value="Guardar Registro"> Guardar </button>
+            <button type="submit" name="guardar" value="Guardar Registro"> Guardar </button>  
         </form>
+        <br>
+        <a class="linkeo" href="Usuarios.php"> Regresar </a>
         </article>
             </section>
       </body>
