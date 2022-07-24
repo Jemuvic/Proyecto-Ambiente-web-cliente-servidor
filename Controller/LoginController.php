@@ -1,6 +1,7 @@
 <?php
 
-include '../Model/LoginModel.php';
+include_once '../Model/LoginModel.php';
+include_once 'PlantillaController.php';
 
 if(isset($_POST['btnLogin']))
 
@@ -11,25 +12,28 @@ $password = $_POST["txtPassword"];
 
 $usuario = Consulta_Usuario_Model($correo, $password);
 
-
-
 if($usuario -> num_rows > 0)
 
 {   
 session_start();
    
-   
-
     $item = mysqli_fetch_array($usuario);
   
-
    $_SESSION["NombreUsuario"] = $item["Nombre"];
    $_SESSION["RolUsuario"] = $item["IdRol"];
 
-   echo '<script>alert("Password correcto")</script>';
-    Header("Location: ../View/Inicio.php");
-    
-    
+    Header("Location: ../View/Inicio.php");    
 }
 
 }
+
+if(isset($_POST['btnCerrarSesion']))
+    {
+        session_start();
+        session_destroy();
+        $_SESSION["NombreUsuario"] = NULL;
+        Header("Location: ../View/Inicio.php");
+        
+    }
+
+?>

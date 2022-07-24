@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+<?php include_once 'header.php'; ?>
+<?php MostrarHeader(); ?>
 <?php  
 include_once '../Controller/ClientesController.php';
 ?>
