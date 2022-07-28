@@ -11,4 +11,17 @@ function ConsultarClientesModel()
     return $ListaClientes;
 }
 
+function EliminarUsuarioModel($correo)
+{ 
+    $instancia = AbrirBD();
+    $instancia -> query("CALL EliminarUsuario('$correo')");
+    CerrarBD($instancia);
+}
+
+function ActualizarUsuarioModel($password, $nombre, $correo, $rol)
+{ 
+    $instancia = AbrirBD();
+    $instancia -> query("CALL ActualizarUsuario('$password', '$nombre', '$correo', $rol)");
+    CerrarBD($instancia);
+}
 ?>

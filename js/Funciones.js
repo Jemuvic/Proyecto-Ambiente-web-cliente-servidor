@@ -1,12 +1,17 @@
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
+
 function Eliminar(correo)
 {
 
-  var opcion = confirm("¿Está completamente seguro de que quiso presionar el botón de eliminar?");
+  var opcion = confirm("¿Está seguro de que desea eliminar a este usuario?");
   if (opcion == true) {
 
       $.ajax({
         type: 'POST',
-        url: '../Controller/UsuariosController.php',
+        url: '../Controller/ClientesController.php',
         data:{
           "Funcion" : "EliminarUsuario",
           "Correo" : correo

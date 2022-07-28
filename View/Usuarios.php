@@ -6,6 +6,7 @@ include_once '../Controller/ClientesController.php';
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <script src="https://kit.fontawesome.com/3e6c3412fc.js" crossorigin="anonymous"></script>
         <title>Registro de usuarios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">>
@@ -24,24 +25,24 @@ include_once '../Controller/ClientesController.php';
                 <br>
         <div class="div-users">
             <table class="tbl-users">
-                <thead id="TablaClientes"  class="tbl-header">
+                <thead id="TablaClientes" class="tbl-header">
                 <th>NOMBRE</th>
                 <th>CORREO</th>
                 <th>ROL</th>
                 <th>IDROL</th>
                 <th>CONTRASEÑA</th>
+                <th>ACCIONES</th>
             </thead>
-
-          <tbody>
+            <tbody>
             <?php
               ConsultarClientesController();
             ?>
           </tbody>
         </table>
-        
+        </div>
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../js/simple-sidebar.js"></script>
+        <script src="../js/Funciones.js"></script>
                                    
     </body>
             </article>

@@ -167,11 +167,12 @@ input[type=button] {
   padding:0;
 }
 .nav-menu-item {
-  right: 0;
+  right:0;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 15px;
   font-size: 17px;
+  align-content: right;
 }
 .link{
   text-decoration: none;
@@ -284,6 +285,7 @@ textArea{
   font-family: 'Fira Sans Condensed', sans-serif;
 
 }
+
 .DCLIENTE{
   width:640px;
   background:#4CCDF5;
@@ -556,6 +558,18 @@ textArea{
   height:300px;
   overflow-x: auto;
   margin-top: 20px;
+}
+
+.caja-comentarios{
+  background:#4CCDF5;
+  border-radius:10px;
+  box-shadow:0 0 70px -40px #000;
+  margin:calc(44.2vh - 150px) auto;
+  padding:40px 60px;
+  max-width:calc(200vw - 50px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative;
 }
 
 .linkeo {

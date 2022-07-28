@@ -7,7 +7,6 @@ function MostrarHeader()
         session_start();
         $RolUsuario = $_SESSION["RolUsuario"];
         $Opciones = "";
-        $_SESSION["RolUsuario"] = NULL;
         if( $RolUsuario == NULL)
         {
             echo 
@@ -19,7 +18,7 @@ function MostrarHeader()
                 </a>
                 <div class="col-md-6">
                             <h1 class= "text-dark">                               
-                            <i class="fas fa-cog"></i> Daily 8-bits
+                              Daily 8-bits
                             </h1>
                             </div> 
                  <div class="collapse navbar-collapse" id="navbarCollapse">        
@@ -57,7 +56,7 @@ function MostrarHeader()
                 </a>
                 <div class="col-md-6">
                             <h1 class= "text-dark">                               
-                            <i class="fas fa-cog"></i> Daily 8-bits
+                            Daily 8-bits
                             </h1>
                             </div> 
                  <div class="collapse navbar-collapse" id="navbarCollapse">        
@@ -103,7 +102,7 @@ function MostrarHeader()
             </a>
             <div class="col-md-6">
                         <h1 class= "text-dark">                               
-                        <i class="fas fa-cog"></i> Daily 8-bits
+                        Daily 8-bits
                         </h1>
                         </div> 
              <div class="collapse navbar-collapse" id="navbarCollapse">        
