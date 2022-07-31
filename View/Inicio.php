@@ -14,8 +14,6 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/simple-sidebar.css" rel="stylesheet">
 
-
-  
      </head>
     <body class="body">
         <section class="contenido">

@@ -6,7 +6,7 @@ function MostrarHeader()
     {   
         session_start();
         $RolUsuario = $_SESSION["RolUsuario"];
-        $Opciones = "";
+        $Opciones = "";       
         if( $RolUsuario == NULL)
         {
             echo 
@@ -16,7 +16,7 @@ function MostrarHeader()
                 <a class="link" href="Inicio.php">
                 <figure class="imagenTitulo"><img src="../Imagenes/icono.png" alt="" width="70" /></figure>
                 </a>
-                <div class="col-md-6">
+                <div class="col-md-7">
                             <h1 class= "text-dark">                               
                               Daily 8-bits
                             </h1>
@@ -54,7 +54,7 @@ function MostrarHeader()
                 <a class="link" href="Inicio.php">
                 <figure class="imagenTitulo"><img src="../Imagenes/icono.png" alt="" width="70" /></figure>
                 </a>
-                <div class="col-md-6">
+                <div class="col-md-7">
                             <h1 class= "text-dark">                               
                             Daily 8-bits
                             </h1>
@@ -100,7 +100,7 @@ function MostrarHeader()
             <a class="link" href="Inicio.php">
             <figure class="imagenTitulo"><img src="../Imagenes/icono.png" alt="" width="70" /></figure>
             </a>
-            <div class="col-md-6">
+            <div class="col-md-7">
                         <h1 class= "text-dark">                               
                         Daily 8-bits
                         </h1>
