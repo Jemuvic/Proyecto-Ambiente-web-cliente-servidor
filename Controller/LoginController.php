@@ -31,7 +31,6 @@ if(isset($_POST['btnCerrarSesion']))
     {
         session_start();
         session_destroy();
-        $_SESSION["NombreUsuario"] = NULL;
         Header("Location: ../View/Inicio.php");
         
     }

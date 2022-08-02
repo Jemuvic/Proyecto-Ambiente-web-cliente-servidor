@@ -5,9 +5,19 @@ include_once '../Controller/PlantillaController.php';
 function MostrarHeader()
     {   
         session_start();
+
+       if(!isset($_SESSION["RolUsuario"]))
+       {
+        $RolUsuario = null;
+       }
+       else
+       {
         $RolUsuario = $_SESSION["RolUsuario"];
+       }
+
+        
         $Opciones = "";       
-        if( $RolUsuario == NULL)
+        if( $RolUsuario == null)
         {
             echo 
        '

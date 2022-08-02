@@ -9,7 +9,7 @@ include_once '../Controller/ClientesController.php';
     <script src="https://kit.fontawesome.com/3e6c3412fc.js" crossorigin="anonymous"></script>
         <title>Registro de usuarios</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/simple-sidebar.css" rel="stylesheet">
         </head>
@@ -39,6 +39,9 @@ include_once '../Controller/ClientesController.php';
             ?>
           </tbody>
         </table>
+
+       <a class="btn" href="CrearUsuario.php">Crear</a>
+
         </div>
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

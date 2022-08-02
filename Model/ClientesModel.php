@@ -18,10 +18,10 @@ function EliminarUsuarioModel($correo)
     CerrarBD($instancia);
 }
 
-function ActualizarUsuarioModel($password, $nombre, $correo, $rol)
+function ActualizarUsuarioModel($password, $correo, $nombre, $rol )
 { 
     $instancia = AbrirBD();
-    $instancia -> query("CALL ActualizarUsuario('$password', '$nombre', '$correo', $rol)");
+    $instancia -> query("CALL ActualizarUsuario('$password', '$correo', '$nombre', $rol)");
     CerrarBD($instancia);
 }
 ?>
