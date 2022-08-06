@@ -19,7 +19,7 @@ include_once '../Controller/ClientesController.php';
           <h1 class="titular">Clientes desde una lista de base de datos</h1>
         <br>
             <article class="descripcion">
-        <a class="newnew" href="Cliente.php">Crear un usuario</a>
+        <a class="newnew" href="CrearCliente.php">Crear un usuario</a>
         <br>
             <br>
                 <br>
@@ -39,9 +39,6 @@ include_once '../Controller/ClientesController.php';
             ?>
           </tbody>
         </table>
-
-       <a class="btn" href="CrearUsuario.php">Crear</a>
-
         </div>
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

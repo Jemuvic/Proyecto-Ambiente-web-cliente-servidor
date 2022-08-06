@@ -1,4 +1,4 @@
-<!-- La primera vez que se inicie la pagina saldrá error, luego de tocar cualquier pantalla se arregla (no sabemos la razón)-->
+
 <?php
 include_once '../Controller/LoginController.php';
 include_once '../Controller/PlantillaController.php';
@@ -40,7 +40,7 @@ function MostrarHeader()
                                 <a class="nav-menu-link nav-link text-dark" href="Contactenos.php">Contáctenos</a>
                             </li>   
                             <li class="nav-item px-2">
-                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php"> IniciarSesión</a>
+                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php">Iniciar~Sesión</a>
                             </li>
 
                         </ul>                        

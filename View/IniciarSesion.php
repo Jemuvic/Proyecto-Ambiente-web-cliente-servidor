@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 <?php MostrarHeader(); ?>
-<?php include '../Controller/LoginController.php'; ?>
+<?php $result=""; include '../Controller/LoginController.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,11 +20,12 @@
            <form  method ="POST"> 
               <h2 class="tituloForm">Iniciar Sesión</h2>
               <label for="correo">Correo:</label>
-              <input type="correo" name="txtCorreo"  placeholder="ejemplo@ejemplo.com"/>
+              <input type="correo" name="txtCorreo" required placeholder="ejemplo@ejemplo.com"/>
               <br>
               <label for="password">Contraseña: </label>
-              <input type="password" name="txtPassword" required minlength="4" maxlength="20" placeholder="Escriba aqui su contraseña"/>
+              <input type="password" name="txtPassword" required  placeholder="Escriba aqui su contraseña"/>
               <button type="submit" name="btnLogin" value="Iniciar Sesión">Iniciar Sesión</button>
+              <h5> <br> <?= $result; ?> </h5>
             </form>
             <br>
             <a class="link" href="CrearUsuario.php">No tiene cuenta? Cree una aquí</a>

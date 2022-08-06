@@ -18,10 +18,35 @@ function EliminarUsuarioModel($correo)
     CerrarBD($instancia);
 }
 
-function ActualizarUsuarioModel($password, $correo, $nombre, $rol )
+function ActualizarUsuarioModel($password, $nombre, $correo, $rol)
 { 
     $instancia = AbrirBD();
-    $instancia -> query("CALL ActualizarUsuario('$password', '$correo', '$nombre', $rol)");
+    $instancia -> query("CALL ActualizarUsuario('$password', '$nombre', '$correo', $rol)");
+    CerrarBD($instancia);
+}
+
+function TraerUsuarioModel($correo)
+{ 
+    $instancia = AbrirBD();
+    $Usuario = $instancia -> query("CALL TraerUsuario('$correo')");
+    CerrarBD($instancia);  
+
+    return $Usuario;
+}
+
+function ConsultarRolesModel()
+{ 
+    $instancia = AbrirBD();
+    $listaRoles = $instancia -> query("CALL TraerRoles()");
+    CerrarBD($instancia);  
+
+    return $listaRoles;
+}
+
+function RegistrarUsuarioModel($password, $nombre, $correo, $rol)
+{ 
+    $instancia = AbrirBD();
+    $instancia -> query("CALL RegistrarUsuarios('$password', '$nombre', '$correo', $rol)");
     CerrarBD($instancia);
 }
 ?>

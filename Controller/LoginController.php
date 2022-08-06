@@ -9,7 +9,7 @@ if(isset($_POST['btnLogin']))
 
 $correo =  $_POST["txtCorreo"];   
 $password = $_POST["txtPassword"];
-
+$result="";
 $usuario = Consulta_Usuario_Model($correo, $password);
 
 if($usuario -> num_rows > 0)
@@ -24,7 +24,10 @@ session_start();
 
     Header("Location: ../View/Inicio.php");    
 }
-
+else
+{
+$result="Correo o contraseña incorrectos";
+}
 }
 
 if(isset($_POST['btnCerrarSesion']))
@@ -35,4 +38,5 @@ if(isset($_POST['btnCerrarSesion']))
         
     }
 
+    
 ?>

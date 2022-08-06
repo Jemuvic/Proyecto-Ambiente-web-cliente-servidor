@@ -1,4 +1,6 @@
-<?php include_once 'header.php'; ?>
+<?php include_once 'header.php'; 
+include_once '../Controller/ClientesController.php';
+?>
 <?php MostrarHeader(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,19 +22,19 @@
               <input type="hidden" name="idcliente"/>
               <input type="hidden" name="estado" value="true"/>
               <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" required minlength="4" maxlength="10" placeholder="Escriba aqui el nombre"/>
-              <br>
-              <label for="apellidos">Apellido:</label>
-              <input type="text" name="apellidos" required minlength="4" maxlength="20" placeholder="Escriba aquí el apellido completo"/>
+            <input type="text" id="txtNombre" name="txtNombre" required minlength="4" maxlength="30" placeholder="Escriba aquí su nombre" />
               <br>
               <label for="correo">Correo:</label>
-              <input type="email" name="correo" required minlength="6" maxlength="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@ejemplo.com"/>
+              <input type="text" id="txtCorreo" name="txtCorreo" required minlength="4" maxlength="20" placeholder="ejemplo@ejemplo.com"/>
               <br>
               <label for="password">Contraseña: </label>
-              <input type="password" name="password" id="pwd" required minlength="4" maxlength="20" placeholder="Escriba aqui su contraseña"/>
-              <br>       
-              <button type="submit" name="guardar" value="Guardar registro">Crear cuenta</button>
+              <input type="text" id="txtPassword" name="txtPassword" required minlength="6" maxlength="20" placeholder="Escriba aquí su contraseña"/>
+              <br>   
+              <input type="hidden" id="txtRol" name="txtRol" value="2"> <!-- Rol predeterminado para un usuario común, es tipo hidden, no se puede ver -->
+            <br>    
+            <input type="submit" class="linkeo" id="btnCrearUsuario" name="btnCrearUsuario" value="CrearUsuario"> 
             </form>
+        <a class="linkeo" href="IniciarSesion.php"> Regresar </a>
         </section>
         <?php include('footer.php'); ?>
     </body>
