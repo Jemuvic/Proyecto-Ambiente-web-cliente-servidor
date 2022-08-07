@@ -32,7 +32,12 @@ include_once '../Controller/ClientesController.php';
               <br>   
               <input type="hidden" id="txtRol" name="txtRol" value="2"> <!-- Rol predeterminado para un usuario común, es tipo hidden, no se puede ver -->
             <br>    
-            <input type="submit" class="linkeo" id="btnCrearUsuario" name="btnCrearUsuario" value="CrearUsuario"> 
+            <input type="submit" class="linkeo" id="btnCrearUsuario" name="btnCrearUsuario" value="CrearUsuario" onclick="CrearAlert()">
+            <script>
+            function CrearAlert() {
+            alert("Usuario creado!");
+            }
+            </script> 
             </form>
         <a class="linkeo" href="IniciarSesion.php"> Regresar </a>
         </section>

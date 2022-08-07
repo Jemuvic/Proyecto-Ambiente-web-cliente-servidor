@@ -64,6 +64,13 @@ $result="Gracias ".$_POST['nombre']." por contactarnos, atenderemos tu inconveni
        <button type="submit" name="submit">Enviar Mensaje</button>
        <h5> <br> <?= $result; ?> </h5>
       </form>
+      <div>
+      <h5>Siguenos en:</h5>
+                 <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-3x"> </i> </a>
+                 <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube fa-3x">  </i></a>
+                 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-3x"> </i></a>
+                 <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-3x"></i></a>
+</div>
       </section>
       <br>
       <br>

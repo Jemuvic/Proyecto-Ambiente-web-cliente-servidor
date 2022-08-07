@@ -36,12 +36,18 @@ include_once '../Controller/ClientesController.php';
             ?>
             </select>
             <br>    
-            <input type="submit" class="linkeo" id="btnRegistrarCliente" name="btnRegistrarCliente" value="CrearCliente"> 
+            <input type="submit" class="linkeo" id="btnRegistrarCliente" name="btnRegistrarCliente" value="CrearCliente"onclick="CrearAlert()">
+            <script>
+            function CrearAlert() {
+            alert("Usuario creado!");
+            }
+            </script>
         </form>
         <br>
         <a class="linkeo" href="Usuarios.php"> Regresar </a>
         </article>
             </section>
+            
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../js/Funciones.js"></script>

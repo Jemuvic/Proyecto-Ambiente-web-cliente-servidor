@@ -6,6 +6,7 @@
 <html lang="en">
 
      <head>
+     <script src="https://kit.fontawesome.com/3e6c3412fc.js" crossorigin="anonymous"></script>
         <title>Iniciar partida</title>
         <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +20,7 @@
         <section class="formulario">
            <form  method ="POST"> 
               <h2 class="tituloForm">Iniciar Sesión</h2>
-              <label for="correo">Correo:</label>
+              <label for="correo"> <i class="fa-solid fa-envelope"></i> Correo:</label>
               <input type="correo" name="txtCorreo" required placeholder="ejemplo@ejemplo.com"/>
               <br>
               <label for="password">Contraseña: </label>

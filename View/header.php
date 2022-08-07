@@ -2,6 +2,8 @@
 <?php
 include_once '../Controller/LoginController.php';
 include_once '../Controller/PlantillaController.php';
+
+
 function MostrarHeader()
     {   
         session_start();
@@ -80,14 +82,16 @@ function MostrarHeader()
                         <li class="nav-item px-2">
                                 <a class="nav-menu-link nav-link text-dark" href="Contactenos.php">Contáctenos</a>
                             </li>   
-                            <li class="nav-item px-2">' .
-                                 $NombreUsuario
-                                 . '  </li>
+                            
                              <li class="nav-item px-2">
                              <form action="" method="POST">
                              <input type="submit" class="nav-menu-link nav-link text-dark" value="Cerrar Sesión" id="btnCerrarSesion" name="btnCerrarSesion">
                              </form>
                              </li>
+
+                             <dt class="nav-item px-4"> <i class="fa-solid fa-user-check"></i>'  .
+                                 $NombreUsuario  
+                                 .    '  </dt>
 
                         </ul>                        
                     </div>                    
@@ -123,14 +127,14 @@ function MostrarHeader()
                     <li class="nav-item px-2">
                             <a class="nav-menu-link nav-link text-dark" href="Contactenos.php">Contáctenos</a>
                         </li>   
-                        <li class="nav-item px-2">' .
-                             $NombreUsuario
-                             . '  </li>
+                        
                          <li class="nav-item px-2">
                          <form action="" method="POST">
                          <input type="submit" class="nav-menu-link nav-link text-dark" value="Cerrar Sesión" id="btnCerrarSesion" name="btnCerrarSesion">
                          </form>
                          </li>
+
+                         
 
                     </ul>                        
                 </div>                    
