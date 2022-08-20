@@ -21,10 +21,16 @@ function ConsultarComentarioController()
     {
         echo "<tr>";
         echo "<td>" . $item["comentario"] . "</td>";
+        //echo '<td><input type="button" onclick="Eliminar(' . "'" . $item["comentario"] . "'" . ');" value="Eliminar" class="btn"></input></td>';
         echo '<td></td>';
         echo "</tr>";
     }
 }
 
+if(isset($_POST['FuncionC']) == "EliminarComentario")
+{
+    $comentario = $_POST["comentario"];
+    EliminarComentarioModel($comentario);
+}
 
 ?>

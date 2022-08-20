@@ -41,9 +41,12 @@ function MostrarHeader()
                         <li class="nav-item px-2">
                                 <a class="nav-menu-link nav-link text-dark" href="Contactenos.php">Contáctenos</a>
                             </li>   
+
                             <li class="nav-item px-2">
-                                <a class="nav-menu-link nav-link text-dark" href="IniciarSesion.php">Iniciar~Sesión</a>
-                            </li>
+                             <form action="" method="POST">
+                             <input type="submit" class="nav-menu-link nav-link text-dark" value="Iniciar sesión" id="btnIniciarSesion" name="btnIniciarSesion">
+                             </form>
+                             </li>
 
                         </ul>                        
                     </div>                    

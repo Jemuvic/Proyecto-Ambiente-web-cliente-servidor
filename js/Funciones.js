@@ -26,4 +26,31 @@ function Eliminar(correo)
 
   }
 
+  
+}
+
+function Eliminar(comentario)
+{
+
+  var opcion = confirm("¿Está seguro de que desea eliminar este comentario?");
+  if (opcion == true) {
+
+      $.ajax({
+        type: 'POST',
+        url: '../Controller/ComentarioController.php',
+        data:{
+          "FuncionC" : "EliminarComentario",
+          "comentario" : comentario
+        },
+        success: function(data){
+          location.reload();
+        },
+        error: function(){
+          alert('Error');
+        }
+      });
+
+  }
+
+  
 }

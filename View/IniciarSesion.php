@@ -23,7 +23,7 @@
               <label for="correo"> <i class="fa-solid fa-envelope"></i> Correo:</label>
               <input type="correo" name="txtCorreo" required placeholder="ejemplo@ejemplo.com"/>
               <br>
-              <label for="password">Contraseña: </label>
+              <label for="password"> <i class="fa-solid fa-lock"></i> Contraseña: </label>
               <input type="password" name="txtPassword" required  placeholder="Escriba aqui su contraseña"/>
               <button type="submit" name="btnLogin" value="Iniciar Sesión">Iniciar Sesión</button>
               <h5> <br> <?= $result; ?> </h5>

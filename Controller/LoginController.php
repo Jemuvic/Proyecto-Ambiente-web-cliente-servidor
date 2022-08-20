@@ -38,5 +38,11 @@ if(isset($_POST['btnCerrarSesion']))
         
     }
 
+    if(isset($_POST['btnIniciarSesion']))
+    {
+
+        Header("Location: ../View/IniciarSesion.php");
+        
+    }
     
 ?>

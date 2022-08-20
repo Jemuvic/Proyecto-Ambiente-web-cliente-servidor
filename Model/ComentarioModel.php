@@ -21,6 +21,12 @@ function ConsultarComentarioModel()
     return $ListaComentario;
 }
 
+function EliminarComentarioModel($comentario)
+{ 
+    $instancia = AbrirBD();
+    $instancia -> query("CALL EliminarComentario('$comentario')");
+    CerrarBD($instancia);
+}
 
 ?>
 

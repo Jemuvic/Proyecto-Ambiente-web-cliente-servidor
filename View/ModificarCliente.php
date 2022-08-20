@@ -18,7 +18,7 @@ $Usuario = TraerClienteController($correo)
         </head>
     <body class="body">
         <section class="Registro">
-        <h2 class="titular">Datos del cliente</h2>
+        <h2 class="titular">Modificando usuario</h2>
         <br>
         <article class="descripcionformulario">
         <form action="" method="POST">

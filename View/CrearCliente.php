@@ -14,7 +14,7 @@ include_once '../Controller/ClientesController.php';
         </head>
     <body class="body">
         <section class="Registro">
-        <h2 class="titular">Datos del cliente</h2>
+        <h2 class="titular">Creando nuevo usuario</h2>
         <br>
         <article class="descripcionformulario">
 
