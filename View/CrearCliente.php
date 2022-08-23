@@ -17,10 +17,9 @@ include_once '../Controller/ClientesController.php';
         <h2 class="titular">Creando nuevo usuario</h2>
         <br>
         <article class="descripcionformulario">
-
         <form action="" method="POST">
         <label for="correo">Correo: </label>
-            <input type="text" id="txtCorreo" name="txtCorreo"  required>
+            <input type="text" id="txtCorreo" name="txtCorreo"  placeholder="ejemplo@ejemplo.com" required email>
             <br>
             <label for="password">Contraseña: </label>
             <input type="text" id="txtPassword" name="txtPassword" required>

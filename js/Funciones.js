@@ -29,7 +29,7 @@ function Eliminar(correo)
   
 }
 
-function Eliminar(comentario)
+/* function Eliminar(comentario)
 {
 
   var opcion = confirm("¿Está seguro de que desea eliminar este comentario?");
@@ -51,6 +51,5 @@ function Eliminar(comentario)
       });
 
   }
-
+*/
   
-}

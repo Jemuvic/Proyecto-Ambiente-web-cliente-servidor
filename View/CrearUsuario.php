@@ -25,7 +25,7 @@ include_once '../Controller/ClientesController.php';
             <input type="text" id="txtNombre" name="txtNombre" required minlength="4" maxlength="30" placeholder="Escriba aquí su nombre" />
               <br>
               <label for="correo">Correo:</label>
-              <input type="text" id="txtCorreo" name="txtCorreo" required minlength="4" maxlength="20" placeholder="ejemplo@ejemplo.com"/>
+              <input type="text" id="txtCorreo" name="txtCorreo" minlength="4" maxlength="20" placeholder="ejemplo@ejemplo.com" required email/>
               <br>
               <label for="password">Contraseña: </label>
               <input type="text" id="txtPassword" name="txtPassword" required minlength="6" maxlength="20" placeholder="Escriba aquí su contraseña"/>

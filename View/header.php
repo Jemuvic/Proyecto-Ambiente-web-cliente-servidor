@@ -7,7 +7,6 @@ include_once '../Controller/PlantillaController.php';
 function MostrarHeader()
     {   
         session_start();
-
        if(!isset($_SESSION["RolUsuario"]))
        {
         $RolUsuario = null;
@@ -16,8 +15,6 @@ function MostrarHeader()
        {
         $RolUsuario = $_SESSION["RolUsuario"];
        }
-
-        
         $Opciones = "";       
         if( $RolUsuario == null)
         {
@@ -136,14 +133,13 @@ function MostrarHeader()
                          <input type="submit" class="nav-menu-link nav-link text-dark" value="Cerrar Sesión" id="btnCerrarSesion" name="btnCerrarSesion">
                          </form>
                          </li>
-
-                         
-
+                         <dt class="nav-item px-4"> <i class="fa-solid fa-user-check"></i>'  .
+                         $NombreUsuario  
+                         .    '  </dt>
                     </ul>                        
                 </div>                    
              </div>  
-        </nav>        
-           
+        </nav>                   
 </header> 
 ';
 

@@ -27,6 +27,7 @@ function ConsultarComentarioController()
     }
 }
 
+/*
 if(isset($_POST['FuncionC']) == "EliminarComentario")
 {
     $comentario = $_POST["comentario"];
@@ -34,3 +35,4 @@ if(isset($_POST['FuncionC']) == "EliminarComentario")
 }
 
 ?>
+*/

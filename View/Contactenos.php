@@ -56,7 +56,7 @@ $result="Gracias ".$_POST['nombre']." por contactarnos, atenderemos tu inconveni
      <input type="text" name="nombre" id="nombre" required minlength="4" maxlength="20" placeholder="Escriba aquí su nombre"/>
     <br>
     <label for="correo"> <i class="fa-solid fa-envelope"></i> Correo:</label>
-     <input type="email" name="email" id="email" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@ejemplo.com" required email/>
+     <input type="email" name="email" id="email" maxlength="40"  placeholder="ejemplo@ejemplo.com" required email/>
       <br>
       <label for="descripcion">Descripción: </label>
       <textarea type="text" name="mensaje" id="mensaje" required minlength="8" placeholder="Escriba aqui una descripción de la necesidad"></textarea>

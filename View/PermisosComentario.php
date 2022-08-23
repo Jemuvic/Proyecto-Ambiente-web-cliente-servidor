@@ -19,7 +19,7 @@ function MostrarPermiso()
        '
        <br>
        <br>
-                       <p class="tituloComentario">No puedes comentar sin iniciar sesión</p>                              
+    <p class="tituloComentario">No puedes comentar sin iniciar sesión</p>                              
  ';     
         } else
         if($RolUsuario == 1)
@@ -32,26 +32,26 @@ function MostrarPermiso()
        <div>
        <br>
        <br>
-                      '.
-                      $Permiso
-                     .'
-                      </div>      
+        '.
+        $Permiso
+         .'
+        </div>      
  ';
         }else 
     if($RolUsuario == 2)
     {
       ValidarSesion();
-            $Permiso = '<a class="newnew" href="Comentario.php"> Agregar comentario </a>';
+    $Permiso = '<a class="newnew" href="Comentario.php"> Agregar comentario </a>';
         
         echo 
        '
        <div>
        <br>
        <br>
-                      '.
-                      $Permiso
-                     .'
-                      </div>      
+     '.
+     $Permiso
+     .'
+    </div>      
  ';
 }
     }
